@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/mainBgColor">
+
+    <EditText
+        android:id="@+id/dollar_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount in US Dollars"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/mainTextColor"
+        android:textColorHint="@color/mainTextColor"
+        android:backgroundTint="@color/mainTextColor"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Convert"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:background="@color/mainTextColor"
+        android:textColor="#666666" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/convert_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/mainTextColor"/>
+
+        <ImageView
+            android:id="@+id/dollar_image"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dollar"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.7"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
